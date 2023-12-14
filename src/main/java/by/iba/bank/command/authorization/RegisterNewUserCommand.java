@@ -17,7 +17,7 @@ public class RegisterNewUserCommand implements Command {
         ClientService clientService = new ClientService();
         User user = new Gson().fromJson(request.getRequestMessage(), User.class);
 
-        if (userService.findAllEntities().stream().noneMatch(x -> x.getUsername().toLowerCase().equals(user.getUsername().toLowerCase()))) {
+        if (userService.findAllEntities().stream().noneMatch(x -> x.getUsername().equalsIgnoreCase(user.getUsername()))) {
             clientService.saveEntity(user.getClient());
             userService.saveEntity(user);
             userService.findAllEntities();

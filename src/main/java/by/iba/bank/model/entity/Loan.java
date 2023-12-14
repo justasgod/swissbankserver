@@ -36,6 +36,9 @@ public class Loan {
     @Column(name = "issue_date", nullable = false, length = 50)
     private String issueDate;
 
+    @Column(name="status", nullable = false, length = 10)
+    private String status;
+
     @OneToMany
     private Set<LoanInterestRate> loanInterestRates = new LinkedHashSet<>();
 

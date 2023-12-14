@@ -12,9 +12,8 @@ public class ClientService implements Service<Client>{
     public Client findEntity(Integer id) {
         try (RepositoryCreator repositoryCreator = new RepositoryCreator()){
             ClientRepository clientRepository = repositoryCreator.getClientRepository();
-            Client entity = clientRepository.findById(id);
 
-            return entity;
+            return clientRepository.findById(id);
         }
 
        /* if (entity.getPersonData() != null) {

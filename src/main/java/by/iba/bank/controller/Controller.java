@@ -18,7 +18,7 @@ public class Controller {
     private static final String ERROR_MESSAGE = "error_message";
     private static final Logger LOGGER = LogManager.getLogger(Controller.class.getName());
 
-    public Response processRequest(@NotNull Request request, Response response){
+    public void processRequest(@NotNull Request request, Response response){
         String command = request.getRequestType().toString();
 
         LOGGER.info(COMMAND + "= " + command);
@@ -28,7 +28,7 @@ public class Controller {
 
         try {
             commandResult = action.execute(request, response);
-            if(commandResult.getData().equals(""))
+            if(commandResult.getData().isEmpty())
                 response.setResponseStatus(ResponseStatus.ERROR);
             else
                 response.setResponseStatus(ResponseStatus.OK);
@@ -39,8 +39,6 @@ public class Controller {
         }
 
         response.setResponseMessage(commandResult.getMessage());
-        response.setResponseMessage(commandResult.getData());
-
-        return response;
+        response.setResponseData(commandResult.getData());
     }
 }

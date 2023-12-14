@@ -12,9 +12,8 @@ public class UserService implements Service<User> {
     public User findEntity(Integer id) {
         try (RepositoryCreator repositoryCreator = new RepositoryCreator()){
             UserRepository userRepository = repositoryCreator.getUserRepository();
-            User entity = userRepository.findById(id);
 
-            return entity;
+            return userRepository.findById(id);
         }
 
        /* if (entity.getPersonData() != null) {

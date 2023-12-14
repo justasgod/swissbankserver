@@ -46,7 +46,8 @@ public class ClientThread implements Runnable {
                 out.flush();
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+            System.out.println("Соединение прервано");
         } finally {
             System.out.println("Клиент " + clientSocket.getInetAddress() + ":" + clientSocket.getPort() + " закрыл соединение.");
             try {
