@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpaBuddyIdeaProjectConfig" ddlActionDbType="mysql" migrateIndexesAndConstraints="true" reUseTableSchema="true">
+    <option name="defaultUnitInitialized" value="true" />
+    <option name="renamerInitialized" value="true" />
+    <option name="reverseEngineeringLastDbConnectionId" value="5d9f84d8-528e-4206-aefc-4d3039a16305" />
+    <option name="reLastEntityCreationPackage" value="src/main/java/by/iba/bank/model/entity" />
+  </component>
+</project>

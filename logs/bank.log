@@ -1,0 +1,1114 @@
+[INFO ] 2023-12-13 05:15:55.940 [Thread-11] Controller -command= LOGIN
+[ERROR] 2023-12-13 05:15:55.949 [Thread-11] Controller -Cannot invoke "com.google.gson.Gson.fromJson(String, java.lang.Class)" because "this.gson" is null
+java.lang.NullPointerException: Cannot invoke "com.google.gson.Gson.fromJson(String, java.lang.Class)" because "this.gson" is null
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:22) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 05:19:02.936 [Thread-0] Controller -command= LOGIN
+[ERROR] 2023-12-13 05:19:02.962 [Thread-0] Controller -Failed making field 'java.time.LocalDate#year' accessible; either increase its visibility or write a custom TypeAdapter for its declaring type.
+com.google.gson.JsonIOException: Failed making field 'java.time.LocalDate#year' accessible; either increase its visibility or write a custom TypeAdapter for its declaring type.
+	at com.google.gson.internal.reflect.ReflectionHelper.makeAccessible(ReflectionHelper.java:38) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:286) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.getAdapter(Gson.java:556) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.getAdapter(Gson.java:556) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.getAdapter(Gson.java:556) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.getAdapter(Gson.java:556) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.getAdapter(Gson.java:556) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1226) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:21) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final int java.time.LocalDate.year accessible: module java.base does not "opens java.time" to unnamed module @5284fb7e
+	at java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:387) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:363) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:311) ~[?:?]
+	at java.lang.reflect.Field.checkCanSetAccessible(Field.java:181) ~[?:?]
+	at java.lang.reflect.Field.setAccessible(Field.java:175) ~[?:?]
+	at com.google.gson.internal.reflect.ReflectionHelper.makeAccessible(ReflectionHelper.java:35) ~[gson-2.10.1.jar:?]
+	... 25 more
+[INFO ] 2023-12-13 05:22:24.350 [Thread-0] Controller -command= LOGIN
+[ERROR] 2023-12-13 05:22:24.351 [Thread-0] Controller -Failed making field 'java.time.LocalDate#year' accessible; either increase its visibility or write a custom TypeAdapter for its declaring type.
+com.google.gson.JsonIOException: Failed making field 'java.time.LocalDate#year' accessible; either increase its visibility or write a custom TypeAdapter for its declaring type.
+	at com.google.gson.internal.reflect.ReflectionHelper.makeAccessible(ReflectionHelper.java:38) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:286) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.getAdapter(Gson.java:556) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.getAdapter(Gson.java:556) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.getAdapter(Gson.java:556) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.getAdapter(Gson.java:556) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.getAdapter(Gson.java:556) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1226) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:21) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final int java.time.LocalDate.year accessible: module java.base does not "opens java.time" to unnamed module @5284fb7e
+	at java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:387) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:363) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:311) ~[?:?]
+	at java.lang.reflect.Field.checkCanSetAccessible(Field.java:181) ~[?:?]
+	at java.lang.reflect.Field.setAccessible(Field.java:175) ~[?:?]
+	at com.google.gson.internal.reflect.ReflectionHelper.makeAccessible(ReflectionHelper.java:35) ~[gson-2.10.1.jar:?]
+	... 25 more
+[INFO ] 2023-12-13 06:07:03.733 [Thread-0] Controller -command= LOGIN
+[ERROR] 2023-12-13 06:07:03.779 [Thread-0] Controller -Cannot invoke "by.iba.bank.service.UserService.findAllEntities()" because "userService" is null
+java.lang.NullPointerException: Cannot invoke "by.iba.bank.service.UserService.findAllEntities()" because "userService" is null
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:18) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 07:07:47.686 [Thread-10] Controller -command= LOGIN
+[ERROR] 2023-12-13 07:07:47.723 [Thread-10] Controller -Cannot invoke "by.iba.bank.service.UserService.findAllEntities()" because "userService" is null
+java.lang.NullPointerException: Cannot invoke "by.iba.bank.service.UserService.findAllEntities()" because "userService" is null
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:18) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 09:04:48.151 [Thread-3] Controller -command= REGISTER
+[INFO ] 2023-12-13 09:07:39.193 [Thread-0] Controller -command= REGISTER_NEW_USER
+[ERROR] 2023-12-13 09:07:39.234 [Thread-0] Controller -Cannot invoke "by.iba.bank.service.UserService.findAllEntities()" because "userService" is null
+java.lang.NullPointerException: Cannot invoke "by.iba.bank.service.UserService.findAllEntities()" because "userService" is null
+	at by.iba.bank.command.authorization.RegisterNewUserCommand.execute(RegisterNewUserCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 09:09:13.253 [Thread-0] Controller -command= REGISTER_NEW_USER
+[ERROR] 2023-12-13 09:09:13.255 [Thread-0] Controller -Cannot invoke "by.iba.bank.service.UserService.findAllEntities()" because "userService" is null
+java.lang.NullPointerException: Cannot invoke "by.iba.bank.service.UserService.findAllEntities()" because "userService" is null
+	at by.iba.bank.command.authorization.RegisterNewUserCommand.execute(RegisterNewUserCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 09:09:43.734 [Thread-0] Controller -command= REGISTER_NEW_USER
+[INFO ] 2023-12-13 09:09:44.579 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 09:09:46.662 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 09:09:46.665 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 09:09:46.671 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 09:09:46.672 [Thread-0] Controller -ids for this class must be manually assigned before calling save(): by.iba.bank.model.entity.Client
+org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): by.iba.bank.model.entity.Client
+	at org.hibernate.id.Assigned.generate(Assigned.java:33) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:115) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:194) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:38) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:179) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:32) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:75) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.fireSave(SessionImpl.java:672) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:665) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:660) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at by.iba.bank.repository.AbstractRepository.save(AbstractRepository.java:46) ~[classes/:?]
+	at by.iba.bank.service.ClientService.saveEntity(ClientService.java:48) ~[classes/:?]
+	at by.iba.bank.command.authorization.RegisterNewUserCommand.execute(RegisterNewUserCommand.java:21) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 09:12:40.919 [Thread-0] Controller -command= REGISTER_NEW_USER
+[INFO ] 2023-12-13 09:12:41.522 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 09:12:43.333 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 09:12:43.335 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 09:12:43.411 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 09:12:43.411 [Thread-0] Controller -could not execute statement
+org.hibernate.exception.GenericJDBCException: could not execute statement
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:58) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3279) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3885) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:194) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:38) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:179) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:32) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:75) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.fireSave(SessionImpl.java:672) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:665) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:660) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at by.iba.bank.repository.AbstractRepository.save(AbstractRepository.java:46) ~[classes/:?]
+	at by.iba.bank.service.ClientService.saveEntity(ClientService.java:48) ~[classes/:?]
+	at by.iba.bank.command.authorization.RegisterNewUserCommand.execute(RegisterNewUserCommand.java:21) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+Caused by: java.sql.SQLException: Field 'client_id' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	... 28 more
+[INFO ] 2023-12-13 09:19:38.090 [Thread-0] Controller -command= REGISTER_NEW_USER
+[INFO ] 2023-12-13 09:19:38.683 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 09:19:40.346 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 09:19:40.348 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 09:19:40.392 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 09:19:40.393 [Thread-0] Controller -error performing isolated work
+org.hibernate.exception.SQLGrammarException: error performing isolated work
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:79) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.id.enhanced.TableStructure$1.getNextValue(TableStructure.java:137) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.id.enhanced.NoopOptimizer.generate(NoopOptimizer.java:40) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.id.enhanced.SequenceStyleGenerator.generate(SequenceStyleGenerator.java:534) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:115) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:194) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:38) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:179) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:32) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:75) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.fireSave(SessionImpl.java:672) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:665) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:660) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at by.iba.bank.repository.AbstractRepository.save(AbstractRepository.java:46) ~[classes/:?]
+	at by.iba.bank.service.ClientService.saveEntity(ClientService.java:48) ~[classes/:?]
+	at by.iba.bank.command.authorization.RegisterNewUserCommand.execute(RegisterNewUserCommand.java:21) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'bank.hibernate_sequence' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at org.hibernate.id.enhanced.TableStructure.executeQuery(TableStructure.java:228) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.id.enhanced.TableStructure.access$300(TableStructure.java:45) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.id.enhanced.TableStructure$1$1.execute(TableStructure.java:150) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.id.enhanced.TableStructure$1$1.execute(TableStructure.java:138) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.jdbc.WorkExecutor.executeReturningWork(WorkExecutor.java:55) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.jdbc.AbstractReturningWork.accept(AbstractReturningWork.java:34) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:57) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	... 19 more
+[INFO ] 2023-12-13 09:25:19.549 [Thread-2] Controller -command= REGISTER_NEW_USER
+[INFO ] 2023-12-13 09:25:19.551 [Thread-2] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 09:25:19.560 [Thread-2] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 09:25:19.560 [Thread-2] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 09:25:19.572 [Thread-2] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 09:25:19.572 [Thread-2] Controller -error performing isolated work
+org.hibernate.exception.SQLGrammarException: error performing isolated work
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:79) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.id.enhanced.TableStructure$1.getNextValue(TableStructure.java:137) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.id.enhanced.NoopOptimizer.generate(NoopOptimizer.java:40) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.id.enhanced.SequenceStyleGenerator.generate(SequenceStyleGenerator.java:534) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:115) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:194) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:38) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:179) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:32) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:75) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.fireSave(SessionImpl.java:672) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:665) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:660) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at by.iba.bank.repository.AbstractRepository.save(AbstractRepository.java:46) ~[classes/:?]
+	at by.iba.bank.service.ClientService.saveEntity(ClientService.java:48) ~[classes/:?]
+	at by.iba.bank.command.authorization.RegisterNewUserCommand.execute(RegisterNewUserCommand.java:21) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'bank.hibernate_sequence' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at org.hibernate.id.enhanced.TableStructure.executeQuery(TableStructure.java:228) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.id.enhanced.TableStructure.access$300(TableStructure.java:45) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.id.enhanced.TableStructure$1$1.execute(TableStructure.java:150) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.id.enhanced.TableStructure$1$1.execute(TableStructure.java:138) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.jdbc.WorkExecutor.executeReturningWork(WorkExecutor.java:55) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.jdbc.AbstractReturningWork.accept(AbstractReturningWork.java:34) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:57) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	... 19 more
+[INFO ] 2023-12-13 09:25:47.448 [Thread-0] Controller -command= REGISTER_NEW_USER
+[INFO ] 2023-12-13 09:25:48.011 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 09:25:49.697 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 09:25:49.698 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 09:25:49.751 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 09:25:49.751 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 09:25:49.754 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 09:25:49.755 [Thread-0] Controller -ids for this class must be manually assigned before calling save(): by.iba.bank.model.entity.User
+org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): by.iba.bank.model.entity.User
+	at org.hibernate.id.Assigned.generate(Assigned.java:33) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:115) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:194) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:38) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:179) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:32) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:75) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.fireSave(SessionImpl.java:672) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:665) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:660) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at by.iba.bank.repository.AbstractRepository.save(AbstractRepository.java:46) ~[classes/:?]
+	at by.iba.bank.service.UserService.saveEntity(UserService.java:48) ~[classes/:?]
+	at by.iba.bank.command.authorization.RegisterNewUserCommand.execute(RegisterNewUserCommand.java:22) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 09:25:49.775 [Thread-0] Controller -command= REGISTER_NEW_USER
+[INFO ] 2023-12-13 09:25:49.777 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 09:25:49.786 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 09:25:49.786 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 09:25:49.807 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 09:25:49.807 [Thread-0] Controller -org.hibernate.exception.ConstraintViolationException: could not execute statement
+javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1411) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at by.iba.bank.repository.AbstractRepository.save(AbstractRepository.java:47) ~[classes/:?]
+	at by.iba.bank.service.ClientService.saveEntity(ClientService.java:48) ~[classes/:?]
+	at by.iba.bank.command.authorization.RegisterNewUserCommand.execute(RegisterNewUserCommand.java:21) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3375) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3908) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:107) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:729) ~[?:?]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	... 14 more
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'bank_clients.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3375) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3908) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:107) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:729) ~[?:?]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	... 14 more
+[INFO ] 2023-12-13 09:51:36.164 [Thread-0] Controller -command= REGISTER_NEW_USER
+[INFO ] 2023-12-13 09:51:36.672 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 09:51:38.191 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 09:51:38.192 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 09:51:38.196 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 09:51:38.196 [Thread-0] Controller -ids for this class must be manually assigned before calling save(): by.iba.bank.model.entity.Client
+org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): by.iba.bank.model.entity.Client
+	at org.hibernate.id.Assigned.generate(Assigned.java:33) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:115) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:194) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:38) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:179) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:32) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:75) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.fireSave(SessionImpl.java:672) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:665) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:660) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at by.iba.bank.repository.AbstractRepository.save(AbstractRepository.java:46) ~[classes/:?]
+	at by.iba.bank.service.ClientService.saveEntity(ClientService.java:48) ~[classes/:?]
+	at by.iba.bank.command.authorization.RegisterNewUserCommand.execute(RegisterNewUserCommand.java:21) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 10:15:30.510 [Thread-0] Controller -command= REGISTER_NEW_USER
+[ERROR] 2023-12-13 10:15:30.552 [Thread-0] Controller -java.lang.IllegalStateException: Expected a string but was BEGIN_ARRAY at line 1 column 33 path $.password
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a string but was BEGIN_ARRAY at line 1 column 33 path $.password
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:397) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1137) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1047) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:982) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.RegisterNewUserCommand.execute(RegisterNewUserCommand.java:18) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+Caused by: java.lang.IllegalStateException: Expected a string but was BEGIN_ARRAY at line 1 column 33 path $.password
+	at com.google.gson.stream.JsonReader.nextString(JsonReader.java:836) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$15.read(TypeAdapters.java:421) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$15.read(TypeAdapters.java:409) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.readIntoField(ReflectiveTypeAdapterFactory.java:212) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter.readField(ReflectiveTypeAdapterFactory.java:433) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:393) ~[gson-2.10.1.jar:?]
+	... 8 more
+[INFO ] 2023-12-13 10:17:39.094 [Thread-0] Controller -command= REGISTER_NEW_USER
+[INFO ] 2023-12-13 10:17:39.606 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 10:17:40.465 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 10:17:40.467 [Thread-0] Controller -Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+	at by.iba.bank.command.authorization.RegisterNewUserCommand.execute(RegisterNewUserCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 10:21:39.397 [Thread-1] Controller -command= REGISTER_NEW_USER
+[INFO ] 2023-12-13 10:21:39.961 [Thread-1] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 10:21:40.815 [Thread-1] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 10:21:40.816 [Thread-1] Controller -Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+	at by.iba.bank.command.authorization.RegisterNewUserCommand.execute(RegisterNewUserCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 10:23:57.204 [Thread-0] Controller -command= REGISTER_NEW_USER
+[INFO ] 2023-12-13 10:23:57.803 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 10:23:58.699 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 10:23:58.701 [Thread-0] Controller -Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+	at by.iba.bank.command.authorization.RegisterNewUserCommand.execute(RegisterNewUserCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 10:36:47.350 [Thread-0] Controller -command= REGISTER_NEW_USER
+[INFO ] 2023-12-13 10:36:47.946 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 10:36:49.570 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 10:36:49.571 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 10:36:49.628 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 10:36:49.629 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 10:36:49.639 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 10:36:49.640 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 10:36:49.671 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 10:36:49.672 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 10:36:49.688 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 10:36:49.695 [Thread-0] Controller -Attempted to serialize java.lang.Class: org.hibernate.proxy.HibernateProxy. Forgot to register a type adapter?
+java.lang.UnsupportedOperationException: Attempted to serialize java.lang.Class: org.hibernate.proxy.HibernateProxy. Forgot to register a type adapter?
+	at com.google.gson.internal.bind.TypeAdapters$1.write(TypeAdapters.java:76) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$1.write(TypeAdapters.java:72) ~[gson-2.10.1.jar:?]
+	at com.google.gson.TypeAdapter$1.write(TypeAdapter.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.write(ArrayTypeAdapter.java:104) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:842) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:812) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:759) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:736) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.RegisterNewUserCommand.execute(RegisterNewUserCommand.java:26) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 10:54:16.747 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 10:54:17.364 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 10:54:52.324 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 10:55:44.387 [Thread-2] Controller -command= LOGIN
+[INFO ] 2023-12-13 10:55:44.403 [Thread-2] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 10:55:48.801 [Thread-2] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:05:40.321 [Thread-3] Controller -command= LOGIN
+[INFO ] 2023-12-13 11:05:40.336 [Thread-3] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:05:43.690 [Thread-3] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:10:08.697 [Thread-4] Controller -command= LOGIN
+[INFO ] 2023-12-13 11:10:08.725 [Thread-4] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:10:47.839 [Thread-4] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:14:17.364 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 11:14:17.989 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:14:19.897 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:24:12.546 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 11:24:12.548 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:24:12.559 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:24:26.958 [Thread-2] Controller -command= LOGIN
+[INFO ] 2023-12-13 11:24:26.961 [Thread-2] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:24:26.970 [Thread-2] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:24:36.465 [Thread-2] Controller -command= LOGIN
+[INFO ] 2023-12-13 11:24:36.466 [Thread-2] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:24:36.478 [Thread-2] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:24:36.478 [Thread-2] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:24:36.487 [Thread-2] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:25:27.718 [Thread-3] Controller -command= LOGIN
+[INFO ] 2023-12-13 11:25:27.719 [Thread-3] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:25:27.728 [Thread-3] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:26:14.318 [Thread-4] Controller -command= LOGIN
+[INFO ] 2023-12-13 11:26:14.320 [Thread-4] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:26:14.328 [Thread-4] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:27:23.995 [Thread-5] Controller -command= LOGIN
+[INFO ] 2023-12-13 11:27:23.996 [Thread-5] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:27:24.004 [Thread-5] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:27:24.005 [Thread-5] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:27:24.012 [Thread-5] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:27:34.780 [Thread-5] Controller -command= LOGIN
+[INFO ] 2023-12-13 11:27:34.781 [Thread-5] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:27:34.790 [Thread-5] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:27:34.790 [Thread-5] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:27:34.798 [Thread-5] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:27:49.368 [Thread-6] Controller -command= LOGIN
+[INFO ] 2023-12-13 11:27:49.370 [Thread-6] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:27:49.378 [Thread-6] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:27:49.378 [Thread-6] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:27:49.385 [Thread-6] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:29:20.811 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 11:29:21.646 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:30:13.884 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:30:20.549 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:30:29.627 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:32:50.675 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 11:32:51.299 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:32:53.332 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:32:53.333 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:32:53.341 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:32:53.341 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:32:53.349 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:32:53.350 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:32:53.363 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 11:32:53.384 [Thread-0] Controller -Attempted to serialize java.lang.Class: org.hibernate.proxy.HibernateProxy. Forgot to register a type adapter?
+java.lang.UnsupportedOperationException: Attempted to serialize java.lang.Class: org.hibernate.proxy.HibernateProxy. Forgot to register a type adapter?
+	at com.google.gson.internal.bind.TypeAdapters$1.write(TypeAdapters.java:76) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$1.write(TypeAdapters.java:72) ~[gson-2.10.1.jar:?]
+	at com.google.gson.TypeAdapter$1.write(TypeAdapter.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.write(ArrayTypeAdapter.java:104) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:842) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:812) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:759) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:736) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:23) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 11:34:02.178 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 11:34:02.801 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:34:04.656 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:34:04.657 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:34:04.667 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:34:04.667 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:34:04.678 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:34:04.679 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:34:04.695 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 11:34:04.702 [Thread-0] Controller -Attempted to serialize java.lang.Class: org.hibernate.proxy.HibernateProxy. Forgot to register a type adapter?
+java.lang.UnsupportedOperationException: Attempted to serialize java.lang.Class: org.hibernate.proxy.HibernateProxy. Forgot to register a type adapter?
+	at com.google.gson.internal.bind.TypeAdapters$1.write(TypeAdapters.java:76) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$1.write(TypeAdapters.java:72) ~[gson-2.10.1.jar:?]
+	at com.google.gson.TypeAdapter$1.write(TypeAdapter.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.write(ArrayTypeAdapter.java:104) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:842) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:812) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:759) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:736) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:23) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 11:36:06.982 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 11:36:07.596 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:36:09.564 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:36:09.566 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:36:09.575 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:36:09.576 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:36:09.586 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:36:09.587 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:36:09.597 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 11:36:09.606 [Thread-0] Controller -Attempted to serialize java.lang.Class: org.hibernate.proxy.HibernateProxy. Forgot to register a type adapter?
+java.lang.UnsupportedOperationException: Attempted to serialize java.lang.Class: org.hibernate.proxy.HibernateProxy. Forgot to register a type adapter?
+	at com.google.gson.internal.bind.TypeAdapters$1.write(TypeAdapters.java:76) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$1.write(TypeAdapters.java:72) ~[gson-2.10.1.jar:?]
+	at com.google.gson.TypeAdapter$1.write(TypeAdapter.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.write(ArrayTypeAdapter.java:104) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:842) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:812) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:759) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:736) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:23) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 11:37:45.222 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 11:37:46.008 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:37:48.452 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:37:48.453 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:37:48.462 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:37:48.462 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:37:48.472 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 11:37:48.473 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 11:37:48.486 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 11:37:48.495 [Thread-0] Controller -Attempted to serialize java.lang.Class: org.hibernate.proxy.HibernateProxy. Forgot to register a type adapter?
+java.lang.UnsupportedOperationException: Attempted to serialize java.lang.Class: org.hibernate.proxy.HibernateProxy. Forgot to register a type adapter?
+	at com.google.gson.internal.bind.TypeAdapters$1.write(TypeAdapters.java:76) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$1.write(TypeAdapters.java:72) ~[gson-2.10.1.jar:?]
+	at com.google.gson.TypeAdapter$1.write(TypeAdapter.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.write(ArrayTypeAdapter.java:104) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:842) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:812) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:759) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:736) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:23) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 12:26:46.493 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 12:26:47.296 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 12:28:59.757 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 12:29:19.901 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 12:29:28.444 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 12:29:33.726 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 12:29:39.415 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 12:30:37.795 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 12:30:37.842 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 12:32:17.870 [Thread-0] Controller -Attempted to serialize java.lang.Class: org.hibernate.proxy.HibernateProxy. Forgot to register a type adapter?
+java.lang.UnsupportedOperationException: Attempted to serialize java.lang.Class: org.hibernate.proxy.HibernateProxy. Forgot to register a type adapter?
+	at com.google.gson.internal.bind.TypeAdapters$1.write(TypeAdapters.java:76) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapters$1.write(TypeAdapters.java:72) ~[gson-2.10.1.jar:?]
+	at com.google.gson.TypeAdapter$1.write(TypeAdapter.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.write(ArrayTypeAdapter.java:104) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:842) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:812) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:759) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:736) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:23) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 12:32:42.201 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 12:32:42.842 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 12:33:34.511 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 12:33:36.952 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 12:33:40.763 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 12:33:42.159 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 12:33:44.334 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 12:34:12.236 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 12:34:12.271 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 12:44:38.140 [Thread-0] Controller -failed to lazily initialize a collection of role: by.iba.bank.model.entity.Client.accounts, could not initialize proxy - no Session
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: by.iba.bank.model.entity.Client.accounts, could not initialize proxy - no Session
+	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.PersistentSet.iterator(PersistentSet.java:188) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:96) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:842) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:812) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:759) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:736) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:23) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 12:45:15.821 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 12:45:16.937 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 12:45:49.128 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 12:45:52.659 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 12:45:54.791 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 12:45:55.849 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 12:46:04.071 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 12:46:29.339 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 12:46:29.380 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 13:07:21.008 [Thread-0] Controller -failed to lazily initialize a collection of role: by.iba.bank.model.entity.Client.accounts, could not initialize proxy - no Session
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: by.iba.bank.model.entity.Client.accounts, could not initialize proxy - no Session
+	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.PersistentSet.iterator(PersistentSet.java:188) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:96) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:842) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:812) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:759) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:736) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:23) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 13:38:29.370 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 13:38:30.137 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 13:38:31.233 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 13:38:31.234 [Thread-0] Controller -Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 13:42:52.944 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 13:42:53.402 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 13:42:55.258 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 13:42:55.260 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 13:42:55.270 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 13:42:55.271 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 13:42:55.280 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 13:42:55.281 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 13:42:55.287 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 13:42:55.292 [Thread-0] Controller -failed to lazily initialize a collection of role: by.iba.bank.model.entity.Client.accounts, could not initialize proxy - no Session
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: by.iba.bank.model.entity.Client.accounts, could not initialize proxy - no Session
+	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.PersistentSet.iterator(PersistentSet.java:188) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:96) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:842) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:812) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:759) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:736) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:23) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 13:47:12.967 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 13:47:13.637 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 13:48:26.479 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 13:48:28.804 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 13:48:31.979 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 13:48:44.709 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 13:48:49.019 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 13:48:49.763 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 13:48:49.796 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 14:49:24.055 [Thread-0] Controller -failed to lazily initialize a collection of role: by.iba.bank.model.entity.Client.accounts, could not initialize proxy - no Session
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: by.iba.bank.model.entity.Client.accounts, could not initialize proxy - no Session
+	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.PersistentSet.iterator(PersistentSet.java:188) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:96) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:842) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:812) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:759) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:736) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:23) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 14:49:46.621 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 14:49:47.373 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 14:50:20.422 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 14:50:20.610 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 14:50:21.418 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 14:50:21.603 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 14:50:23.329 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 14:50:26.948 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 14:50:26.990 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 14:53:01.173 [Thread-0] Controller -failed to lazily initialize a collection of role: by.iba.bank.model.entity.User.bankRoles, could not initialize proxy - no Session
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: by.iba.bank.model.entity.User.bankRoles, could not initialize proxy - no Session
+	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.PersistentSet.iterator(PersistentSet.java:188) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:96) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:842) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:812) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:759) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:736) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:23) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 14:53:51.049 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 14:53:51.676 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 14:53:53.579 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 14:53:53.581 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 14:53:53.594 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 14:53:53.595 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 14:53:53.607 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 14:53:53.607 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 14:53:53.614 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 14:53:53.617 [Thread-0] Controller -failed to lazily initialize a collection of role: by.iba.bank.model.entity.User.bankRoles, could not initialize proxy - no Session
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: by.iba.bank.model.entity.User.bankRoles, could not initialize proxy - no Session
+	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.PersistentSet.iterator(PersistentSet.java:188) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:96) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:842) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:812) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:759) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:736) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:23) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:09:04.248 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:09:05.173 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:09:41.210 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 15:09:43.378 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:09:43.443 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 15:09:43.446 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:09:43.502 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 15:09:43.504 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:09:43.542 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 15:13:27.466 [Thread-0] Controller -failed to lazily initialize a collection of role: by.iba.bank.model.entity.User.bankRoles, could not initialize proxy - no Session
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: by.iba.bank.model.entity.User.bankRoles, could not initialize proxy - no Session
+	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.PersistentSet.iterator(PersistentSet.java:188) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:96) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:842) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:812) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:759) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:736) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:23) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:13:55.883 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:13:57.501 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:14:28.272 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 15:14:30.580 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:14:30.634 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 15:14:30.637 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:14:30.686 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 15:14:30.688 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:14:30.730 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 15:14:58.093 [Thread-0] Controller -failed to lazily initialize a collection of role: by.iba.bank.model.entity.User.bankRoles, could not initialize proxy - no Session
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: by.iba.bank.model.entity.User.bankRoles, could not initialize proxy - no Session
+	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.PersistentSet.iterator(PersistentSet.java:188) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:96) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:842) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:812) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:759) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:736) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:23) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:15:17.318 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:15:19.049 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:15:23.578 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 15:15:23.582 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:15:23.604 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 15:15:23.605 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:15:23.622 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 15:15:23.623 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:15:23.636 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 15:19:01.544 [Thread-0] Controller -failed to lazily initialize a collection of role: by.iba.bank.model.entity.User.bankRoles, could not initialize proxy - no Session
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: by.iba.bank.model.entity.User.bankRoles, could not initialize proxy - no Session
+	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.PersistentSet.iterator(PersistentSet.java:188) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:96) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:842) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:812) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:759) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:736) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:23) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:20:02.968 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:20:04.613 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:20:09.815 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 15:20:09.819 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:20:09.841 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 15:20:09.842 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:20:09.865 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 15:20:09.867 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:20:09.881 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 15:20:51.227 [Thread-0] Controller -failed to lazily initialize a collection of role: by.iba.bank.model.entity.User.bankRoles, could not initialize proxy - no Session
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: by.iba.bank.model.entity.User.bankRoles, could not initialize proxy - no Session
+	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at org.hibernate.collection.internal.PersistentSet.iterator(PersistentSet.java:188) ~[hibernate-core-5.6.10.Final.jar:5.6.10.Final]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:96) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:70) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:196) ~[gson-2.10.1.jar:?]
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:368) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:842) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:812) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:759) ~[gson-2.10.1.jar:?]
+	at com.google.gson.Gson.toJson(Gson.java:736) ~[gson-2.10.1.jar:?]
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:23) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:21:25.945 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:21:27.357 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:21:31.113 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 15:21:31.115 [Thread-0] Controller -Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:22:37.832 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:22:39.485 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:22:43.726 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 15:22:43.731 [Thread-0] Controller -Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:24:24.057 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:24:25.858 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:24:28.457 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 15:24:28.461 [Thread-0] Controller -Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:24:50.475 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:24:50.477 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:24:50.641 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 15:24:50.642 [Thread-0] Controller -Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:26:03.719 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:26:05.151 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:26:07.345 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 15:26:07.348 [Thread-0] Controller -Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:27:34.177 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:27:35.678 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:27:37.924 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 15:27:37.927 [Thread-0] Controller -Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:28:50.071 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:28:50.885 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:28:52.413 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 15:28:52.415 [Thread-0] Controller -Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:30:24.177 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:30:25.772 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:30:28.724 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 15:30:28.728 [Thread-0] Controller -Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:33:02.947 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:33:04.373 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:33:06.837 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 15:33:06.839 [Thread-0] Controller -Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:34:59.478 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:35:01.091 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:35:04.116 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 15:35:04.119 [Thread-0] Controller -Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:36:14.367 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:36:15.794 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:36:19.932 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 15:36:19.937 [Thread-0] Controller -Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:37:49.106 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:37:50.757 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:37:55.998 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[ERROR] 2023-12-13 15:37:56.002 [Thread-0] Controller -Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.stream()" because the return value of "by.iba.bank.service.UserService.findAllEntities()" is null
+	at by.iba.bank.command.authorization.LoginCommand.execute(LoginCommand.java:20) ~[classes/:?]
+	at by.iba.bank.controller.Controller.processRequest(Controller.java:30) ~[classes/:?]
+	at by.iba.bank.utility.ClientThread.run(ClientThread.java:51) ~[classes/:?]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+[INFO ] 2023-12-13 15:39:59.562 [Thread-0] Controller -command= LOGIN
+[INFO ] 2023-12-13 15:40:01.164 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:40:06.221 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 15:40:06.227 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:40:06.443 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 15:40:06.445 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:40:06.483 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
+[INFO ] 2023-12-13 15:40:06.485 [Thread-0] ConnectionPool -Connection was taken, the are free connection 4
+[INFO ] 2023-12-13 15:40:06.504 [Thread-0] ConnectionPool -Connection was released, the are free connection 5
