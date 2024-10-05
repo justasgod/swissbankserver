@@ -15,36 +15,16 @@ public class ClientService implements Service<Client>{
 
             return clientRepository.findById(id);
         }
-
-       /* if (entity.getPersonData() != null) {
-            for (Passenger passenger : entity.getPersonData().getPassengers()) {
-                passenger.setPersonData(null);
-                passenger.getFlight().setUserMarks(null);
-                passenger.getFlight().setAircraft(null);
-                passenger.getFlight().setRoute(null);
-            }
-            entity.getPersonData().setUsers(null);
-        }
-        for (UserMark userMark : entity.getUserMarks()) {
-            userMark.getFlight().setUserMarks(null);
-            userMark.getFlight().setRoute(null);
-            userMark.getFlight().setAircraft(null);
-            User tempUser = new User();
-            tempUser.setId(userMark.getUser().getId());
-            tempUser.setPassword(userMark.getUser().getPassword());
-            tempUser.setName(userMark.getUser().getName());
-            tempUser.setLogin(userMark.getUser().getLogin());
-            tempUser.setRole(userMark.getUser().getRole());
-            userMark.setUser(tempUser);
-        }
-        return entity;*/
     }
 
     @Override
     public void saveEntity(Client entity) {
         try (RepositoryCreator repositoryCreator = new RepositoryCreator()){
             ClientRepository clientRepository = repositoryCreator.getClientRepository();
-            clientRepository.save(entity);
+            if(clientRepository.save(entity))
+                System.out.println("OK");
+            else
+                System.out.println("Error");
         }
     }
 
@@ -52,7 +32,10 @@ public class ClientService implements Service<Client>{
     public void deleteEntity(Client entity) {
         try (RepositoryCreator repositoryCreator = new RepositoryCreator()){
             ClientRepository clientRepository = repositoryCreator.getClientRepository();
-            clientRepository.delete(entity);
+            if(clientRepository.delete(entity))
+                System.out.println("OK");
+            else
+                System.out.println("Error");
         }
     }
 

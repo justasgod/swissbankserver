@@ -8,6 +8,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
+@ToString
 @Table(name = "bank_users", schema = "bank")
 public class User {
     @Id
@@ -20,6 +21,9 @@ public class User {
 
     @Column(name = "password", nullable = false)
     private byte[] password;
+
+    @Column(name = "role", nullable = false, length = 10)
+    private String role;
 
     @ManyToOne
     @JoinColumn(name = "client_id")

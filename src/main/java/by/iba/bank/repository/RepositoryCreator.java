@@ -20,6 +20,14 @@ public class RepositoryCreator implements AutoCloseable{
         return new ClientRepository(connection);
     }
 
+    public AccountRepository getAccountRepository(){return new AccountRepository(connection);}
+
+    public LoanRepository getLoanRepository(){return new LoanRepository(connection);}
+
+    public LoanInterestRateRepository getLoanInterestRates(){return new LoanInterestRateRepository(connection);}
+
+    public TransactionRepository getTransactionRepository(){return new TransactionRepository(connection);}
+
     @Override
     public void close() {
         connectionPool.releaseConnection(connection);

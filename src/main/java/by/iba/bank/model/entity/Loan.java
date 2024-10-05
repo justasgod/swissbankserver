@@ -2,23 +2,28 @@ package by.iba.bank.model.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Set;
 
 @Getter
 @Setter
 @Entity
+@ToString
 @Table(name = "loans", schema = "bank")
 public class Loan {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "loan_id", nullable = false)
     private Integer id;
 
     @ManyToOne
-    @JoinColumn(name = "account_id", nullable = false)
+    @JoinColumn(name = "account_id")
     private Account account;
 
     @Column(name = "amount", nullable = false, precision = 10, scale = 2)
@@ -39,7 +44,7 @@ public class Loan {
     @Column(name="status", nullable = false, length = 10)
     private String status;
 
-    @OneToMany
-    private Set<LoanInterestRate> loanInterestRates = new LinkedHashSet<>();
-
+  /*  @OneToMany
+    private List<LoanInterestRate> loanInterestRates = new ArrayList<>();
+*/
 }

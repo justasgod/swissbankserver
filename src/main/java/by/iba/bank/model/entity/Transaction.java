@@ -2,6 +2,7 @@ package by.iba.bank.model.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -10,10 +11,12 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 @Entity
+@ToString
 @Table(name = "bank_transactions", schema = "bank")
 public class Transaction {
     @Id
     @Column(name = "transaction_id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
 
@@ -31,6 +34,8 @@ public class Transaction {
 
     @Column(name = "comment", length = 100)
     private String comment;
+
+
 
     @ManyToOne
     @JoinColumn(name = "account_id", nullable = false)

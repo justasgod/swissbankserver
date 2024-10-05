@@ -15,7 +15,7 @@ import java.util.List;
 import org.hibernate.query.Query;
 
 
-public abstract class AbstractRepository<T>  implements Repository<T>{
+public abstract class AbstractRepository<T>  implements Repository<T> {
     private Connection connection;
     private static final Logger logger = LogManager.getLogger(AbstractRepository.class);
 
@@ -43,7 +43,7 @@ public abstract class AbstractRepository<T>  implements Repository<T>{
         boolean isAdded = false;
         try (Session session = HibernateSessionFactory.getSessionFactory().openSession()) {
             session.beginTransaction();
-            session.save(t);
+            session.saveOrUpdate(t);
             session.getTransaction().commit();
             isAdded = true;
         }

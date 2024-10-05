@@ -1,4 +1,4 @@
-package by.iba.bank.command.crud;
+package by.iba.bank.command.crud.user;
 
 import by.iba.bank.command.Command;
 import by.iba.bank.command.CommandResult;
